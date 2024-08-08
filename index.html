@@ -5,14 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brad Anderson Jr. - Dev Subdomain</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#fcbf47',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Welcome to Brad's Dev Subdomain</h1>
-        <p class="text-xl mb-8">This is the development area for Brad Anderson Jr.'s projects.</p>
-        <a href="https://www.bradandersonjr.com" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
-            Visit Main Website
-        </a>
-    </div>
+<body class="bg-gray-100 min-h-screen font-sans">
+    <nav class="bg-brand shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">Brad Anderson Jr.</div>
+            <a href="https://www.bradandersonjr.com" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                Main Website
+            </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="p-8">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800">Welcome to the Dev Subdomain</h1>
+                <p class="text-xl mb-6 text-gray-600">Exploring ideas, testing new features, and pushing the boundaries of web development.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h2 class="text-2xl font-semibold mb-2 text-gray-800">Current Projects</h2>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Responsive Design Experiments</li>
+                            <li>API Integration Testing</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h2 class="text-2xl font-semibold mb-2 text-gray-800">Tech Stack</h2>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-brand p-6 rounded-lg text-center">
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-800">Get in Touch</h2>
+                    <p class="mb-4 text-gray-800">Interested in collaborating or have questions about my projects?</p>
+                    <a href="mailto:contact@bradandersonjr.com" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full inline-block transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Brad Anderson Jr. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
